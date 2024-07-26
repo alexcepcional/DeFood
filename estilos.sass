@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap')
+    
+    
+// fonts
+$Dfont: "League Spartan", sans-serif
+
+// colors
+$Dblue: rgb(43, 120, 228)
+$DblueD: rgb(29, 69, 199)
+$Dorange: rgb(255, 153, 0)
+$Dwhite: rgb(245, 245, 245)
+// $Dgray: #333745
+
+
+//ESTILO
+
+*
+    font-family: $Dfont
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    height: 100%
+
+body
+    display: flex
+    flex-direction: column
+    min-height: 100%
+    background-image: linear-gradient(to right bottom, rgba(255, 153, 0, 0.7), rgb(29, 69, 199, 0.7)), url(./img/background.jpeg)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    background-attachment: fixed
+
+header
+    font-size: larger
+    background-color: $Dblue
+    width: 100%
+
+    .logo
+        font-weight: bold
+        font-size: x-large
+        padding: 20px
+        padding-bottom: 10px
+        text-align: center
+        color: $Dwhite
+        & span
+            color: $Dorange
+
+    ul
+        list-style: none
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        padding: 0
+        margin: 0
+        padding-bottom: 7px
+        flex-flow: row wrap
+
+        li
+            padding: 7px
+
+            a
+                color: $Dwhite
+                text-decoration: none
+                transition: all 0.5s
+            a:hover
+                color: $Dorange
+
+footer
+    background-color: $Dblue
+    width: 100%
+    margin-top: auto
+    bottom: 0
+    color: $Dwhite
+    text-align: center
+    padding: 10px
+
+    a
+        text-decoration: none
+        word-spacing: 5px
+        color: $Dwhite
+        transition: all 0.5s
+    a:hover
+        color: $Dorange
+
+    .copy
+        margin-top: 5px
+    .redes
+        margin-top: 5px
+
+@import "_index"
+@import "_menu"
