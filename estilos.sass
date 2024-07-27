@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap')
-    
-    
+
 // fonts
 $Dfont: "League Spartan", sans-serif
 
@@ -9,7 +8,9 @@ $Dblue: rgb(43, 120, 228)
 $DblueD: rgb(29, 69, 199)
 $Dorange: rgb(255, 153, 0)
 $Dwhite: rgb(245, 245, 245)
-// $Dgray: #333745
+$Dgray: rgb(51, 55, 69)
+$Dshadow: rgba(19, 50, 150, 0.300)
+
 
 
 //ESTILO
@@ -27,46 +28,51 @@ body
     display: flex
     flex-direction: column
     min-height: 100%
-    background-image: linear-gradient(to right bottom, rgba(255, 153, 0, 0.7), rgb(29, 69, 199, 0.7)), url(./img/background.jpeg)
+    background-color: $Dgray
+    background-image: linear-gradient(to right bottom, rgba(255, 153, 0, 0.7), rgb(29, 69, 199, 0.7))
     background-size: cover
     background-position: center
     background-repeat: no-repeat
     background-attachment: fixed
 
-header
-    font-size: larger
-    background-color: $Dblue
+nav
+    z-index: 100
     width: 100%
+    position: fixed !important
 
-    .logo
-        font-weight: bold
-        font-size: x-large
-        padding: 20px
-        padding-bottom: 10px
-        text-align: center
-        color: $Dwhite
-        & span
-            color: $Dorange
+.navbar
+    padding-bottom: 3px
+    background-color: $Dblue !important
+    color: $Dwhite
 
-    ul
-        list-style: none
-        display: flex
-        justify-content: space-evenly
-        align-items: center
+    .container
         padding: 0
-        margin: 0
-        padding-bottom: 7px
-        flex-flow: row wrap
 
-        li
-            padding: 7px
+        .logo
+            padding-left: 15px
+            font-size: x-large
+            color: $Dwhite
 
-            a
-                color: $Dwhite
-                text-decoration: none
-                transition: all 0.5s
-            a:hover
+            span
                 color: $Dorange
+
+    .nav-item
+        padding-left: 15px
+
+    .nav-link
+        color: $Dwhite !important
+        transition: all 0.4s
+        &:hover
+            color: $Dorange !important
+
+    .navbar-toggler
+        font-size: 20px
+        border: none
+        color: $Dwhite !important
+        transition: all 0.4s
+        &:focus
+            box-shadow: none
+            color: $Dorange !important
 
 footer
     background-color: $Dblue
@@ -78,17 +84,18 @@ footer
     padding: 10px
 
     a
+        font-size: 25px
         text-decoration: none
-        word-spacing: 5px
+        word-spacing: 10px
         color: $Dwhite
         transition: all 0.5s
     a:hover
         color: $Dorange
 
-    .copy
-        margin-top: 5px
-    .redes
-        margin-top: 5px
+        .copy
+            margin-top: 5px
+        .redes
+            margin-top: 5px
 
 @import "_index"
 @import "_menu"
