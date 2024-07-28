@@ -223,7 +223,7 @@ footer .redeslink:hover .redes {
 .bannernos {
   margin-top: 47px;
   height: 70px;
-  background-image: url(./img/nosotrosbanner.png);
+  background-color: rgb(255, 153, 0);
   background-size: cover;
   background-position: bottom;
   color: rgb(245, 245, 245);
@@ -250,4 +250,156 @@ footer .redeslink:hover .redes {
   background-position: center;
   height: 200px;
   width: 100%;
+}
+
+.imgnos1 {
+  background-image: url(../img/nosotros1.png);
+}
+
+.imgnos2 {
+  background-image: url(../img/nosotros2.png);
+}
+
+.forminises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 20px;
+  width: 350px;
+  max-width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  background-color: rgb(43, 120, 228);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.385);
+}
+.forminises .inisestitle {
+  color: rgb(245, 245, 245);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.forminises .inisestitle span {
+  color: rgb(255, 153, 0);
+  font-weight: bold;
+}
+.forminises input {
+  width: 100%;
+  padding: 5px 5px 3px;
+  margin-top: 8px;
+  border-radius: 2px;
+  outline: none;
+  border: 2px inset rgb(255, 153, 0);
+  background-color: rgb(43, 120, 228);
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+}
+.forminises ::-moz-placeholder {
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+}
+.forminises ::placeholder {
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+}
+.forminises .btncont {
+  border: none;
+  border-radius: 4px;
+  margin: 15px;
+  margin-top: 20px;
+  width: 40%;
+  text-align: center;
+  padding: 7px 0px 4px;
+  color: rgb(245, 245, 245);
+  background-color: rgb(255, 153, 0);
+  transition: all 0.4s;
+}
+.forminises .btncont:hover {
+  background-color: rgb(250, 92, 18);
+}
+.forminises .option {
+  margin: 0px;
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+}
+.forminises .option a {
+  color: rgb(255, 153, 0);
+  font-weight: normal;
+}
+
+.formregister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 20px;
+  width: 450px;
+  max-width: 85%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(43, 120, 228);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.385);
+}
+.formregister .registertitle {
+  color: rgb(245, 245, 245);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.formregister .registertitle span {
+  color: rgb(255, 153, 0);
+  font-weight: bold;
+}
+.formregister .desc {
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+  font-size: medium;
+  text-align: center;
+}
+.formregister input {
+  width: 100%;
+  padding: 5px 5px 3px;
+  margin-top: 8px;
+  border-radius: 2px;
+  outline: none;
+  border: 2px inset rgb(255, 153, 0);
+  background-color: rgb(43, 120, 228);
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+}
+.formregister ::-moz-placeholder {
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+}
+.formregister ::placeholder {
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+}
+.formregister .btncont {
+  border: none;
+  border-radius: 4px;
+  margin: 15px;
+  margin-top: 20px;
+  width: 40%;
+  text-align: center;
+  padding: 7px 0px 4px;
+  color: rgb(245, 245, 245);
+  background-color: rgb(255, 153, 0);
+  transition: all 0.4s;
+}
+.formregister .btncont:hover {
+  background-color: rgb(250, 92, 18);
+}
+.formregister .option {
+  margin: 0px;
+  color: rgb(245, 245, 245);
+  font-weight: lighter;
+}
+.formregister .option a {
+  color: rgb(255, 153, 0);
+  font-weight: normal;
 }/*# sourceMappingURL=estilos.css.map */
