@@ -169,7 +169,7 @@ footer .redeslink:hover .redes {
 
 .item {
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.385);
-  background-image: url(../img/placeholder.jpeg);
+  background-image: url(../img/placeholder.webp);
   background-size: cover;
   background-position: center;
   border: 3px solid rgb(255, 153, 0);
@@ -181,39 +181,39 @@ footer .redeslink:hover .redes {
 }
 
 .comrap1 {
-  background-image: url(../img/comrap1.jpeg);
+  background-image: url(../img/comrap1.webp);
 }
 
 .comrap2 {
-  background-image: url(../img/comrap2.jpeg);
+  background-image: url(../img/comrap2.webp);
 }
 
 .comrap3 {
-  background-image: url(../img/comrap3.jpeg);
+  background-image: url(../img/comrap3.webp);
 }
 
 .postre1 {
-  background-image: url(../img/postres1.jpg);
+  background-image: url(../img/postres1.webp);
 }
 
 .postre2 {
-  background-image: url(../img/postres2.jpg);
+  background-image: url(../img/postres2.webp);
 }
 
 .postre3 {
-  background-image: url(../img/postres3.jpg);
+  background-image: url(../img/postres3.webp);
 }
 
 .vegan1 {
-  background-image: url(../img/vegan1.jpeg);
+  background-image: url(../img/vegan1.webp);
 }
 
 .vegan2 {
-  background-image: url(../img/vegan2.jpg);
+  background-image: url(../img/vegan2.webp);
 }
 
 .vegan3 {
-  background-image: url(../img/vegan3.jpg);
+  background-image: url(../img/vegan3.webp);
 }
 
 .galcom3 {
@@ -245,7 +245,7 @@ footer .redeslink:hover .redes {
 
 .imgnos {
   margin-bottom: 30px;
-  background-image: url(../img/placeholder.jpeg);
+  background-image: url(../img/placeholder.webp);
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -253,11 +253,11 @@ footer .redeslink:hover .redes {
 }
 
 .imgnos1 {
-  background-image: url(../img/nosotros1.png);
+  background-image: url(../img/nosotros1.webp);
 }
 
 .imgnos2 {
-  background-image: url(../img/nosotros2.png);
+  background-image: url(../img/nosotros2.webp);
 }
 
 .forminises {
