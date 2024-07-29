@@ -1,0 +1,145 @@
+#carousel {
+  margin-top: 47px;
+}
+
+.bannerindex{
+  display: flex;
+  margin-top: 47px;
+  padding: 20px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  background-color: $Dgray;
+  color: $Dwhite;
+  text-shadow: 2px 2px 4px $Dshadow;
+  box-shadow: 2px 0px 5px $Dshadow;
+  }
+
+  span{
+      color: $Dorange;
+    }
+
+  p{
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: lighter;
+  }
+
+.indexsect {
+  display: flex;
+  flex-flow: wrap column;
+  margin: 20px;
+  margin-bottom: 40px;
+
+  .card {
+    text-shadow: 2px 2px 4px $Dshadow;
+    margin-top: 20px;
+    background: none;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.01);
+    }
+    .card-title {
+      font-size: x-large;
+    }
+    .card-img-top {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+
+    .card-body {
+      color: $Dwhite;
+      background-color: $Dorange;
+      margin: 0;
+      text-align: center;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    .card1 {
+      margin-top: 10px;
+    }
+    .btn {
+      padding-top: 8px;
+      display: block;
+      color: $Dwhite;
+      background-color: $Dblue;
+      transition: all 0.5s;
+      &:hover {
+        color: $Dwhite;
+        background-color: $DblueD;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 479px){
+
+  p{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 530px) {
+
+  p{
+    display: none;
+  }
+
+  .card {
+    margin: 10px;
+    max-height: 400px;
+  }
+
+  .card-img-top {
+    max-height: 400px;
+    overflow: auto;
+  }
+
+}
+
+@media only screen and (min-width: 530px) and (max-width: 999px){
+  .par2, .par3, .par4{
+    display: none;
+  }
+
+  .indexsect{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .card{
+    max-height: 400px;
+    max-width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1249px){
+
+  .indexsect{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .card{
+    max-height: 1080px;
+    overflow: auto;
+    max-width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1250px){
+
+  .indexsect{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .card{
+    max-height: 1080px;
+    overflow: auto;
+    max-width: 24%;
+  }
+}

@@ -34,7 +34,8 @@ nav {
   color: rgb(245, 245, 245);
 }
 .navbar .container {
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
 }
 .navbar .container .logo {
   padding-left: 15px;
@@ -72,7 +73,7 @@ footer {
   bottom: 0;
   color: rgb(245, 245, 245);
   text-align: center;
-  padding: 10px;
+  padding: 10px 10px 5px 10px;
 }
 footer .redeslink {
   font-size: 25px;
@@ -91,8 +92,59 @@ footer .redeslink:hover .redes {
   margin-top: 5px;
 }
 
+@media only screen and (min-width: 575px) {
+  nav {
+    width: 100%;
+  }
+  nav .navbar {
+    display: flex;
+  }
+  nav #navbarNav {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  nav .nav-item {
+    padding: 0px !important;
+  }
+  nav .nav-link {
+    font-size: 18px;
+    padding: 0px 15px 2px 15px !important;
+  }
+  nav .container {
+    width: 100%;
+    max-width: 3000px;
+    margin: 0px;
+    margin-right: 10px !important;
+  }
+  .d-block {
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
 #carousel {
   margin-top: 47px;
+}
+
+.bannerindex {
+  display: flex;
+  margin-top: 47px;
+  padding: 20px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  background-color: rgb(51, 55, 69);
+  color: rgb(245, 245, 245);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.385);
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.385);
+}
+
+span {
+  color: rgb(255, 153, 0);
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: lighter;
 }
 
 .indexsect {
@@ -102,6 +154,7 @@ footer .redeslink:hover .redes {
   margin-bottom: 40px;
 }
 .indexsect .card {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.385);
   margin-top: 20px;
   background: none;
   transition: all 0.3s;
@@ -139,6 +192,62 @@ footer .redeslink:hover .redes {
   background-color: rgb(29, 69, 199);
 }
 
+@media only screen and (max-width: 479px) {
+  p {
+    display: none;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 530px) {
+  p {
+    display: none;
+  }
+  .card {
+    margin: 10px;
+    max-height: 400px;
+  }
+  .card-img-top {
+    max-height: 400px;
+    overflow: auto;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 999px) {
+  .par2, .par3, .par4 {
+    display: none;
+  }
+  .indexsect {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  .card {
+    max-height: 400px;
+    max-width: 48%;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1249px) {
+  .indexsect {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  .card {
+    max-height: 1080px;
+    overflow: auto;
+    max-width: 48%;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .indexsect {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  .card {
+    max-height: 1080px;
+    overflow: auto;
+    max-width: 24%;
+  }
+}
 .menubanner {
   margin: 47px 0px 0px;
   padding: 20px 0px 10px;
@@ -266,13 +375,15 @@ footer .redeslink:hover .redes {
   align-items: center;
   flex-flow: column;
   padding: 20px;
+  margin-top: 7px;
   width: 350px;
   max-width: 85%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
-  background-color: rgb(43, 120, 228);
+  background-color: rgba(43, 120, 228, 0.75);
+  border: 1px solid rgb(255, 153, 0);
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.385);
 }
@@ -292,7 +403,7 @@ footer .redeslink:hover .redes {
   border-radius: 2px;
   outline: none;
   border: 2px inset rgb(255, 153, 0);
-  background-color: rgb(43, 120, 228);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(245, 245, 245);
   font-weight: lighter;
 }
@@ -341,8 +452,9 @@ footer .redeslink:hover .redes {
   top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(43, 120, 228);
+  background-color: rgba(43, 120, 228, 0.75);
   border-radius: 5px;
+  border: 1px solid rgb(255, 153, 0);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.385);
 }
 .formregister .registertitle {
@@ -352,7 +464,6 @@ footer .redeslink:hover .redes {
 }
 .formregister .registertitle span {
   color: rgb(255, 153, 0);
-  font-weight: bold;
 }
 .formregister .desc {
   color: rgb(245, 245, 245);
@@ -367,7 +478,7 @@ footer .redeslink:hover .redes {
   border-radius: 2px;
   outline: none;
   border: 2px inset rgb(255, 153, 0);
-  background-color: rgb(43, 120, 228);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(245, 245, 245);
   font-weight: lighter;
 }

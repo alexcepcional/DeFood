@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+// fonts
+$Dfont: "League Spartan", sans-serif;
+
+// colors
+$Dblue: rgb(43, 120, 228);
+$DblueD: rgb(29, 69, 199);
+$DblueT: rgba(43, 120, 228, 0.750);
+$Dorange: rgb(255, 153, 0);
+$DorangeD: rgb(250, 92, 18);
+$Dwhite: rgb(245, 245, 245);
+$Dgray: rgb(51, 55, 69);
+$Dblack: rgb(0, 0, 0);
+$Dshadow: rgba(0, 0, 0, 0.385);
+
+
+
+//ESTILO
+
+* {
+  font-family: $Dfont;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: $Dgray;
+  background-image: linear-gradient(to right bottom, rgba(255, 153, 0, 0.7), rgb(29, 69, 199, 0.7));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav {
+  z-index: 100;
+  width: 100%;
+  position: fixed !important;
+}
+.navbar {
+  padding-bottom: 3px;
+  background-color: $Dblue !important;
+  color: $Dwhite;
+
+  .container {
+    padding: 0px;
+    margin: 0px;
+
+    .logo {
+      padding-left: 15px;
+      font-size: x-large;
+      color: $Dwhite;
+
+      span {
+        color: $Dorange;
+      }
+    }
+  }
+  .nav-item {
+    padding-left: 15px;
+  }
+  .nav-link {
+    color: $Dwhite !important;
+    transition: all 0.4s;
+    &:hover {
+      color: $Dorange !important;
+    }
+  }
+  .navbar-toggler {
+    font-size: 20px;
+    border: none;
+    color: $Dwhite !important;
+    transition: all 0.4s;
+    &:focus {
+      box-shadow: none;
+      color: $Dorange !important;
+    }
+  }
+}
+footer {
+  background-color: $Dblue;
+  width: 100%;
+  margin-top: auto;
+  bottom: 0;
+  color: $Dwhite;
+  text-align: center;
+  padding: 10px 10px 5px 10px;
+
+  .redeslink {
+    font-size: 25px;
+    text-decoration: none;
+    word-spacing: 10px;
+    color: $Dwhite;
+    transition: all 0.5s;
+  }
+  .redeslink:hover {
+    color: $Dorange;
+
+    .copy {
+      margin-top: 5px;
+    }
+    .redes {
+      margin-top: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 575px){
+  nav {
+    width: 100%;
+
+    .navbar {
+      display: flex;
+    }
+    #navbarNav {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .nav-item {
+      padding: 0px !important;
+    }
+    .nav-link {
+      font-size: 18px;
+      padding: 0px 15px 2px 15px !important;
+    }
+    .container {
+      width: 100%;
+      max-width: 3000px;
+      margin: 0px;
+      margin-right: 10px !important;
+    }
+  }
+
+  .d-block{
+    max-height: 300px;
+    overflow: hidden;
+  }
+};
+
+@import "_index";
+@import "_menu";
+@import "_nosotros";
+@import "_inises";
+@import "_register";
