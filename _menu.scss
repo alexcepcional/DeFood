@@ -34,37 +34,76 @@
   &:hover {
     transform: scale(1.01);
   }
+}
 
-// IMAGENES
-}
-.comrap1 {
-  background-image: url(../img/comrap1.webp);
-}
-.comrap2 {
-  background-image: url(../img/comrap2.webp);
-}
-.comrap3 {
-  background-image: url(../img/comrap3.webp);
-}
-.postre1 {
-  background-image: url(../img/postres1.webp);
-}
-.postre2 {
-  background-image: url(../img/postres2.webp);
-}
-.postre3 {
-  background-image: url(../img/postres3.webp);
-}
-.vegan1 {
-  background-image: url(../img/vegan1.webp);
-}
-.vegan2 {
-  background-image: url(../img/vegan2.webp);
-}
-.vegan3 {
-  background-image: url(../img/vegan3.webp);
-}// FIN IMAGENES
+//IMAGENES
+  .comrap1 {
+    background-image: url(../img/comrap1.webp);
+  }
+  .comrap2 {
+    background-image: url(../img/comrap2.webp);
+  }
+  .comrap3 {
+    background-image: url(../img/comrap3.webp);
+  }
+  .postre1 {
+    background-image: url(../img/postres1.webp);
+  }
+  .postre2 {
+    background-image: url(../img/postres2.webp);
+  }
+  .postre3 {
+    background-image: url(../img/postres3.webp);
+  }
+  .vegan1 {
+    background-image: url(../img/vegan1.webp);
+  }
+  .vegan2 {
+    background-image: url(../img/vegan2.webp);
+  }
+  .vegan3 {
+    background-image: url(../img/vegan3.webp);
+  }
+//FIN IMAGENES
 
 .galcom3 {
   padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 570px) and (max-width: 869px){
+
+  .galcom{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 10px;
+
+    .comrap3, .postre3, .vegan3{
+      grid-column: 1/3;
+      grid-row: -3/-1;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 870px) and (max-width: 1249px){
+
+  .galcom{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 200px);
+    grid-gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 1250px){
+
+  .galcom{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 30px;
+
+    .item{
+      grid-row: -3/-1;
+    }
+  }
+
 }

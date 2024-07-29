@@ -18,7 +18,7 @@
       color: $Dorange;
     }
 
-  p{
+  .parindex{
     margin-bottom: 10px;
     font-size: large;
     font-weight: lighter;
@@ -73,7 +73,7 @@
 
 @media only screen and (max-width: 479px){
 
-  p{
+  .parindex{
     display: none;
   }
 
@@ -81,7 +81,7 @@
 
 @media only screen and (min-width: 480px) and (max-width: 530px) {
 
-  p{
+  .parindex{
     display: none;
   }
 
@@ -98,7 +98,7 @@
 }
 
 @media only screen and (min-width: 530px) and (max-width: 999px){
-  .par2, .par3, .par4{
+  .ipar2, .ipar3, .ipar4{
     display: none;
   }
 
