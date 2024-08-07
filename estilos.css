@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   background-color: rgb(51, 55, 69);
-  background-image: linear-gradient(to right bottom, rgba(255, 153, 0, 0.7), rgba(29, 69, 199, 0.7));
+  background-image: url(./img/BGFood.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ nav {
 
 .navbar {
   padding-bottom: 3px;
-  background-color: rgb(43, 120, 228) !important;
+  background-color: #2b78e4 !important;
   color: rgb(245, 245, 245);
 }
 .navbar .container {
@@ -67,7 +67,7 @@ nav {
 }
 
 footer {
-  background-color: rgb(43, 120, 228);
+  background-color: #2b78e4;
   width: 100%;
   margin-top: auto;
   bottom: 0;
@@ -125,9 +125,17 @@ footer .redeslink:hover .redes {
   margin-top: 47px;
 }
 
+.indximgban {
+  margin-top: 47px;
+  background-image: url(./img/chefteam.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
 .bannerindex {
   display: flex;
-  margin-top: 47px;
   padding: 20px;
   padding-bottom: 5px;
   overflow: hidden;
@@ -184,7 +192,7 @@ span {
   padding-top: 8px;
   display: block;
   color: rgb(245, 245, 245);
-  background-color: rgb(43, 120, 228);
+  background-color: #2b78e4;
   transition: all 0.5s;
 }
 .indexsect .card .btn:hover {
@@ -254,7 +262,7 @@ span {
   font-size: 40px;
   color: rgb(245, 245, 245);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.385);
-  background-color: rgb(255, 153, 0);
+  background-color: rgb(51, 55, 69);
   text-align: center;
 }
 
@@ -360,7 +368,7 @@ span {
 .bannernos {
   margin-top: 47px;
   height: 70px;
-  background-color: rgb(255, 153, 0);
+  background-color: rgb(51, 55, 69);
   background-size: cover;
   background-position: bottom;
   color: rgb(245, 245, 245);
@@ -381,6 +389,8 @@ span {
 }
 
 .imgnos {
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.385);
   margin-bottom: 30px;
   background-image: url(../img/placeholder.webp);
   background-size: cover;

@@ -1,7 +1,7 @@
 .bannernos {
   margin-top: 47px;
   height: 70px;
-  background-color: $Dorange;
+  background-color: $Dgray;
   background-size: cover;
   background-position: bottom;
   color: $Dwhite;
@@ -21,6 +21,8 @@
   font-size: large;
 }
 .imgnos {
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px $Dshadow;
   margin-bottom: 30px;
   background-image: url(../img/placeholder.webp);
   background-size: cover;
